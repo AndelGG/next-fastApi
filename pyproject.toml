@@ -19,6 +19,7 @@ motor-types = "^1.0.0b4"
 ruff = "^0.9.7"
 mypy = "^1.15.0"
 pre-commit = "^4.1.0"
+pytest = "^8.3.4"
 
 [build-system]
 requires = ["poetry-core>=2.0.0"]
