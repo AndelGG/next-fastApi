@@ -79,6 +79,15 @@ def is_valid_move(board: list[list[int]], row: int | None, col: int | None) -> b
     return row == N - 1 or board[row + 1][col] != PlayerEnum.EMPTY
 
 
+def calculate_row_by_col(board: list[list[int]], col: int) -> int | None:
+    if col < 0 or col >= M:
+        return None
+    for row in range(N - 1, -1, -1):
+        if board[row][col] == PlayerEnum.EMPTY:
+            return row
+    return None
+
+
 def mark_winner(board: list[list[int]], winner: int) -> None:
     def find_winner_cells(row: int, col: int) -> None:
         for direction in DIRECTIONS:

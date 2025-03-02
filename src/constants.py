@@ -7,6 +7,6 @@ TARGET = 4
 
 class PlayerEnum(IntEnum):
     EMPTY = 0
-    PLAYER = 1
-    PLAYER_2 = 2
+    PLAYER1 = 1
+    PLAYER2 = 2
     WINNER = 3
